@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Mini App</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src='https://telegram.org/js/telegram-web-app.js'></script>
     <style>
         body {
             display: flex;
@@ -13,18 +13,27 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Цвет фона, можно заменить на любой другой */
         }
         button {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px; /* Закругленные углы */
+            background-color: #333; /* Темный цвет кнопки */
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555; /* Цвет кнопки при наведении */
         }
     </style>
 </head>
 <body>
-    <button onclick="showMessage()">Click</button>
+    <button onclick='showMessage()'>Нажми)</button>
     <script>
         function showMessage() {
-            alert("Поздравляю тебя с днём Рождения! Желаю здоровья, счастья и ярких моментов, чтобы каждый день был полон радости. Пусть сбудутся все твои мечты! Ты заслуживаешь только лучшего!");
+            alert('С Днём Рождения!');
         }
 
         // Telegram Web App integration
@@ -32,3 +41,4 @@
     </script>
 </body>
 </html>
+
